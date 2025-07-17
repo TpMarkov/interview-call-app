@@ -1,5 +1,5 @@
 import ConvexClerkProvider from "@/components/providers/ConvexClerkProvider";
-import { ThemeProvider } from "@/components/theme-provider";
+import { ThemeProvider } from "@/components/providers/theme-provider";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
