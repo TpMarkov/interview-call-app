@@ -8,6 +8,8 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import { RedirectToSignIn, SignedIn, SignedOut } from "@clerk/nextjs";
 import { Toaster } from "react-hot-toast";
+import { useEffect, useState } from "react";
+import dynamic from "next/dynamic";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -42,9 +44,9 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
+            <Navbar />
             <SignedIn>
               <div className="min-h-screen">
-                <Navbar />
                 <main className="px-4 sm:px-6 lg:px-8">{children}</main>
               </div>
             </SignedIn>
