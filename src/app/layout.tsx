@@ -10,6 +10,7 @@ import { RedirectToSignIn, SignedIn, SignedOut } from "@clerk/nextjs";
 import { Toaster } from "react-hot-toast";
 import { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
+import { ConvexReactClient } from "convex/react";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
